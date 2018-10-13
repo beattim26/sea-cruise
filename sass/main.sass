@@ -1,0 +1,327 @@
+html
+	margin: 0
+	font-size: 10px
+	@media (max-width: 576px)
+		font-size: 8px	
+
+img
+	width: 100%
+	height: 100%
+
+body
+	margin: 0
+	background-color: #f3f3f3
+	font-size: 1.4rem
+	font-family: 'Raleway', sans-serif
+
+.container
+	max-width: 1145px
+
+.header
+	min-height: 647px
+	background: url(../img/header-bg.jpg) no-repeat
+	background-size: cover
+	.top-nav
+		padding-top: 33px
+		.nav-button
+			.button
+				width: 22px
+				height: 16px
+				background-image: url(../img/nav-menu.png)
+				background-color: rgba(0, 0, 0, 0)
+				border: none
+				cursor: pointer
+				@media (max-width: 768px)
+					display: none
+		.col-md2
+			font-family: 'Raleway', sans-serif	
+			display: flex
+			color: #000
+			@media (max-width: 770px)
+				justify-content: space-between			
+			.filter
+				display: flex
+				flex-direction: row
+				position: relative
+				bottom: 20px
+				line-height: 48px
+				@media (max-width: 500px)
+					margin: 0 auto
+				&_1::before
+					content: ''
+					position: absolute
+					top: 22px
+					left: -2px
+					width: 10px
+					height: 12px
+					background: url(../img/nav-user.png) no-repeat
+					@media (max-width: 576px)
+						background-size: 80%
+						left: 2px
+						top: 23px
+				&_2::before
+					content: ''
+					position: absolute
+					top: 22px
+					left: 171px
+					width: 10px
+					height: 12px
+					background: url(../img/nav-rub.png) no-repeat
+					@media (max-width: 576px)
+						left: 150px
+						background-size: 80%
+					@media (max-width: 350px)
+						left: 127px
+						top: 23px
+				fieldset
+					margin-right: 25px
+					border: 0 none
+					@media (max-width: 350px)
+						margin-right: 0
+					legend
+						display: none
+					select
+						font-size: 1.4rem
+						border: none
+						background: rgba(0, 0, 0, 0)
+			.nav-contact
+				position: relative
+				bottom: 10px
+				@media (max-width: 500px)
+					display: none
+				p
+					margin: 0
+					font-weight: 700
+				span
+					white-space: nowrap	
+	.jumbotron
+		display: flex
+		flex-direction: column
+		align-items: center
+		&_quote
+			font-family: 'Roboto Slab', serif
+			color: #0d3351
+			h1
+				text-align: center
+				font-size: 3.6rem
+				line-height: 48px
+				p
+					margin-top: 50px
+					text-transform: uppercase
+					font-size: 100px
+					line-height: 100px
+					@media (max-width: 713px)
+						font-size: 80px
+						line-height: 80px
+					@media (max-width: 575px)
+						margin-bottom: 120px
+						font-size: 70px
+						line-height: 70px
+					@media (max-width: 507px)
+						font-size: 50px
+						line-height: 50px
+
+		&_button
+			display: inline-block
+			padding: 15px 50px
+			margin-top: -45px
+			background-color: #33c7fd
+			color: #fff
+			text-decoration: none
+			&:hover
+				background-color: #6dd1f5
+.catalog
+	&_quote
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-top: 120px
+		margin-bottom: 20px
+		font-family: 'Roboto Slab', serif
+		color: #0d3351
+		@media (max-width: 711px)
+			margin-top: 20px
+		h3
+			position: relative
+			font-size: 3.6rem
+			margin-bottom: 10px
+			letter-spacing: 1px
+			&::before
+				content: ''
+				position: absolute
+				left: 70px
+				bottom: 45px
+				width: 163px
+				height: 300px
+				background: url(../img/btn-after.png) no-repeat
+				@media (max-width: 1060px)
+					height: 180px
+				@media (max-width: 711px)
+					display: none
+		fieldset
+			border: 0 none
+			legend
+				display: none
+			select
+				border: none
+				background: rgba(0, 0, 0, 0)
+				span
+					font-style: italic
+	.card
+		background-color: #fff
+		margin-bottom: 20px
+		.card-info
+			padding-left: 40px
+			color: #1d415d
+			a
+				display: inline-block
+				position: relative
+				margin: 0
+				padding-right: 15px
+				font-family: 'Roboto Slab', serif
+				font-size: 1.8rem
+				color: #00a2dd
+				text-decoration: none
+				letter-spacing: 0.5px
+				&::after
+					content: ""
+					position: absolute
+					bottom: 4px
+					width: 15px
+					height: 15px
+					background: url(../img/right-arrow.png) no-repeat
+					background-position: 6px 5px					
+			p	
+				font-family: 'Raleway', sans-serif
+				margin: 0
+				margin-bottom: 10px	
+			.tour-price
+				font-size: 3rem
+				padding-top: 5px
+				padding-bottom: 28px
+	.card-1
+		position: relative
+		&::before	
+			content: ''
+			position: absolute
+			top: -10px
+			right: 40px
+			width: 16.04%
+			height: 23.11%
+			background: url(../img/hit-flag.png) no-repeat
+			background-size: 100%
+	.card-3
+		position: relative
+		&::before	
+			content: ''
+			position: absolute
+			top: -10px
+			right: 40px
+			width: 16.04%
+			height: 89.38%
+			background: url(../img/event-flag.png) no-repeat
+			background-size: 100%
+	.card-4
+		position: relative
+		&::before	
+			content: ''
+			position: absolute
+			top: -10px
+			right: 40px
+			width: 16.04%
+			height: 89.38%
+			background: url(../img/discount-flag.png) no-repeat
+			background-size: 100%
+	.button
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin: 0 auto
+		margin-bottom: 65px
+		padding: 15px 39px
+		max-width: 203px
+		max-height: 45px
+		background-color: #33c7fd
+		color: #fff
+		text-decoration: none
+		&:hover
+			background-color: #6dd1f5
+		&::after
+			content: ""
+			position: absolute
+			right: 30px
+			top: 21px
+			width: 10px
+			height: 5px
+			background: url(../img/down-arrow.png) no-repeat
+.footer
+	background-color: #fff
+	color: #1d415d
+	@media (max-width: 576px)
+		font-size: 1.8rem
+	p 
+		position: relative
+		top: 15px
+	ul 
+		list-style: none
+		padding: 0
+		margin-top: 30px
+		li 
+			margin-bottom: 10px
+			a 
+				text-decoration: none
+				color: #1d415d
+	.about
+		@media (max-width: 576px)
+			display: none	
+	.social-list
+		@media (max-width: 576px)		
+			display: flex
+			flex-direction: column
+			align-items: center
+		p
+			@media (max-width: 576px)
+			margin-bottom: 0		
+	&_social
+		display: flex
+		&_vk
+			background-image: url(../img/vk.svg)
+			background-repeat: no-repeat
+			background-position: 6px 10px
+		&_ok
+			background-image: url(../img/ok.svg)
+			background-repeat: no-repeat
+			background-position: 11px 7px
+		&_yt
+			background-image: url(../img/yt.svg)
+			background-repeat: no-repeat
+			background-position: 9.2px 6px
+		&_im
+			background-image: url(../img/insta.svg)
+			background-repeat: no-repeat
+			background-position: 9.1px 9px					
+		li 
+			margin-right: 10px	
+			a 
+				display: inline-block
+				width: 32px
+				height: 32px
+				background-color: #0d3351
+				border-radius: 50%	
+				&:hover
+					background-color: #194669	
+	&_contact
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		margin-bottom: 15px
+		@media (max-width: 576px)
+			align-items: center
+			margin-top: -30px
+			p 
+				display: inline-block
+				margin-top: 5px
+		p 
+			margin-bottom: 0
+			
